@@ -1,0 +1,184 @@
+_type: export
+__export_format: 4
+__export_date: 2023-11-18T21:30:57.582Z
+__export_source: insomnia.desktop.app:v8.4.2
+resources:
+  - _id: req_c68efabec6de4e50bbabd79530061f5e
+    parentId: wrk_407aa32de7cb4141a5eb40c4aac6765b
+    modified: 1700342702542
+    created: 1700341881149
+    url: http://localhost:3010/cars
+    name: Add new car
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: '{"manufacturer": "Ford", "model": "Model-T", "year": 1960}'
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.4.2
+    authentication: {}
+    metaSortKey: -1700341881149
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_407aa32de7cb4141a5eb40c4aac6765b
+    parentId: null
+    modified: 1700341828234
+    created: 1700341828234
+    name: cars.yaml
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_35c86865013b443d9c69f36b266426fb
+    parentId: wrk_407aa32de7cb4141a5eb40c4aac6765b
+    modified: 1700342835360
+    created: 1700342830649
+    url: http://localhost:3010/cars
+    name: Get all car datas
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.4.2
+    authentication: {}
+    metaSortKey: -1700082131203.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_2d4f30a9505949a187da52c4a4f50954
+    parentId: wrk_407aa32de7cb4141a5eb40c4aac6765b
+    modified: 1700342859138
+    created: 1700342852250
+    url: http://localhost:3010/cars/12
+    name: Get car data by id
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.4.2
+    authentication: {}
+    metaSortKey: -1699952256230.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_a8d3d3efecd24c328bc639acb6f73c4a
+    parentId: wrk_407aa32de7cb4141a5eb40c4aac6765b
+    modified: 1700342911014
+    created: 1700342881695
+    url: http://localhost:3010/cars/12
+    name: Update car data by id
+    description: ""
+    method: PATCH
+    body:
+      mimeType: application/json
+      text: "\t\t{
+
+        \t\t\t\"manufacturer\": \"Ford\",
+
+        \t\t\t\"model\": \"Model-D\",
+
+        \t\t\t\"year\": 1960
+
+        \t\t}
+
+        \t"
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.4.2
+    authentication: {}
+    metaSortKey: -1699887318744.375
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4e176f99474d47a6a0b1113a3a3163a0
+    parentId: wrk_407aa32de7cb4141a5eb40c4aac6765b
+    modified: 1700342959070
+    created: 1700342942022
+    url: http://localhost:3010/cars/4
+    name: Delete car data by id
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: ""
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/8.4.2
+    authentication: {}
+    metaSortKey: -1699854850001.1875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_f4f788f29c03a1b9422f45011f2a8f0845f04f9b
+    parentId: wrk_407aa32de7cb4141a5eb40c4aac6765b
+    modified: 1700341828259
+    created: 1700341828259
+    name: Base Environment
+    data: {}
+    dataPropertyOrder: null
+    color: null
+    isPrivate: false
+    metaSortKey: 1700341828259
+    _type: environment
+  - _id: jar_f4f788f29c03a1b9422f45011f2a8f0845f04f9b
+    parentId: wrk_407aa32de7cb4141a5eb40c4aac6765b
+    modified: 1700341828280
+    created: 1700341828280
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
+  - _id: spc_6948ba5bdf9740d780ef861dc0df1172
+    parentId: wrk_407aa32de7cb4141a5eb40c4aac6765b
+    modified: 1700341828251
+    created: 1700341828251
+    fileName: New Document
+    contents: ""
+    contentType: yaml
+    _type: api_spec
